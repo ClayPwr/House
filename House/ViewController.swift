@@ -7,13 +7,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, Stroyboarded {
+    
+    weak var coordinator: MainCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .cyan
     }
 
-
+    @IBAction func openProfileAction(_ sender: UIButton) {
+        coordinator?.openProfile()
+    }
+    
 }
 
