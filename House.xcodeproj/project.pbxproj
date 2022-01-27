@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE9AD4B227A2CE7C00E97143 /* UserDefaults+Local.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AD4B127A2CE7C00E97143 /* UserDefaults+Local.swift */; };
 		CEAD8FCF279D5D6300B3C931 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAD8FCE279D5D6300B3C931 /* AppDelegate.swift */; };
 		CEAD8FD1279D5D6300B3C931 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAD8FD0279D5D6300B3C931 /* SceneDelegate.swift */; };
 		CEAD8FD3279D5D6300B3C931 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAD8FD2279D5D6300B3C931 /* ViewController.swift */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE9AD4B027A2C23A00E97143 /* House.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = House.entitlements; sourceTree = "<group>"; };
+		CE9AD4B127A2CE7C00E97143 /* UserDefaults+Local.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Local.swift"; sourceTree = "<group>"; };
 		CEAD8FCB279D5D6300B3C931 /* House.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = House.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAD8FCE279D5D6300B3C931 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAD8FD0279D5D6300B3C931 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE9C3B3A27A2E1F400097502 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AD4B127A2CE7C00E97143 /* UserDefaults+Local.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CEAD8FC2279D5D6300B3C931 = {
 			isa = PBXGroup;
 			children = (
@@ -64,11 +75,13 @@
 		CEAD8FCD279D5D6300B3C931 /* House */ = {
 			isa = PBXGroup;
 			children = (
+				CE9AD4B027A2C23A00E97143 /* House.entitlements */,
 				CEAD8FEA279DDD7D00B3C931 /* Navigation */,
 				CEAD8FCE279D5D6300B3C931 /* AppDelegate.swift */,
 				CEAD8FD0279D5D6300B3C931 /* SceneDelegate.swift */,
 				CEAD8FD2279D5D6300B3C931 /* ViewController.swift */,
 				CEAD8FE8279D67F100B3C931 /* ProfileViewController.swift */,
+				CE9C3B3A27A2E1F400097502 /* Extensions */,
 				CEAD8FD4279D5D6300B3C931 /* Main.storyboard */,
 				CEAD8FD7279D5D6500B3C931 /* Assets.xcassets */,
 				CEAD8FD9279D5D6500B3C931 /* LaunchScreen.storyboard */,
@@ -158,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9AD4B227A2CE7C00E97143 /* UserDefaults+Local.swift in Sources */,
 				CEAD8FE3279D618900B3C931 /* Coordinator.swift in Sources */,
 				CEAD8FE7279D63B000B3C931 /* MainCoordinator.swift in Sources */,
 				CEAD8FE5279D61FF00B3C931 /* Stroyboarded.swift in Sources */,
@@ -311,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = House/House.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4PR4N2FLE7;
@@ -325,7 +340,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ihor.tarabanov.House;
+				PRODUCT_BUNDLE_IDENTIFIER = com.md.ihor.tarabanov.House;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -338,6 +353,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = House/House.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4PR4N2FLE7;
@@ -352,8 +369,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ihor.tarabanov.House;
+				PRODUCT_BUNDLE_IDENTIFIER = com.md.ihor.tarabanov.House;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

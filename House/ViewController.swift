@@ -45,12 +45,31 @@ class ViewController: UIViewController, Stroyboarded {
 // MARK: - ASAuthorizationControllerDelegate
 
 extension ViewController: ASAuthorizationControllerDelegate {
+    func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
+        print("auth error ", error.localizedDescription)
+    }
     
+    func authorizationController(controller: ASAuthorizationController,
+                                 didCompleteWithAuthorization authorization: ASAuthorization) {
+        switch authorization.credential {
+        case let appleIDCredential as ASAuthorizationAppleIDCredential:
+            UserDefaults.isUserLoggedIn = true
+            UserDefaults.userAppleAuthID = appleIDCredential.user
+            UserDefaults.userFullName = appleIDCredential.fullName ?? PersonNameComponents()
+            UserDefaults.userEmail = appleIDCredential.email ?? ""
+        case let passwordCredential as ASPasswordCredential:
+            _ = passwordCredential.user
+            _ = passwordCredential.password
+        default:
+            break
+        }
+
+    }
 }
 
 extension ViewController: ASAuthorizationControllerPresentationContextProviding {
     func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
-        ASPresentationAnchor()
+        return self.view.window!
     }
     
     
