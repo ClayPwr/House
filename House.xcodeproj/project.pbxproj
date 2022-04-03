@@ -18,6 +18,11 @@
 		CEAD8FE5279D61FF00B3C931 /* Stroyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAD8FE4279D61FF00B3C931 /* Stroyboarded.swift */; };
 		CEAD8FE7279D63B000B3C931 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAD8FE6279D63B000B3C931 /* MainCoordinator.swift */; };
 		CEAD8FE9279D67F100B3C931 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAD8FE8279D67F100B3C931 /* ProfileViewController.swift */; };
+		CED4D36F27FA248B0091E446 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4D36E27FA248B0091E446 /* MainTabBarController.swift */; };
+		CED4D37127FA25C00091E446 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4D37027FA25C00091E446 /* MenuViewController.swift */; };
+		CED4D37327FA25E00091E446 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4D37227FA25E00091E446 /* FavoriteViewController.swift */; };
+		CED4D37527FA25FE0091E446 /* OrderHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4D37427FA25FE0091E446 /* OrderHistoryViewController.swift */; };
+		CED4D37727FA26150091E446 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4D37627FA26150091E446 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,11 @@
 		CEAD8FE4279D61FF00B3C931 /* Stroyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stroyboarded.swift; sourceTree = "<group>"; };
 		CEAD8FE6279D63B000B3C931 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		CEAD8FE8279D67F100B3C931 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CED4D36E27FA248B0091E446 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		CED4D37027FA25C00091E446 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CED4D37227FA25E00091E446 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		CED4D37427FA25FE0091E446 /* OrderHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryViewController.swift; sourceTree = "<group>"; };
+		CED4D37627FA26150091E446 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,8 @@
 			children = (
 				CE9AD4B027A2C23A00E97143 /* House.entitlements */,
 				CEAD8FEA279DDD7D00B3C931 /* Navigation */,
+				CED4D36E27FA248B0091E446 /* MainTabBarController.swift */,
+				CED4D37827FA26370091E446 /* Modules */,
 				CEAD8FCE279D5D6300B3C931 /* AppDelegate.swift */,
 				CEAD8FD0279D5D6300B3C931 /* SceneDelegate.swift */,
 				CEAD8FD2279D5D6300B3C931 /* ViewController.swift */,
@@ -98,6 +110,17 @@
 				CEAD8FE4279D61FF00B3C931 /* Stroyboarded.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		CED4D37827FA26370091E446 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CED4D37027FA25C00091E446 /* MenuViewController.swift */,
+				CED4D37227FA25E00091E446 /* FavoriteViewController.swift */,
+				CED4D37427FA25FE0091E446 /* OrderHistoryViewController.swift */,
+				CED4D37627FA26150091E446 /* AboutViewController.swift */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,13 +194,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED4D37527FA25FE0091E446 /* OrderHistoryViewController.swift in Sources */,
+				CED4D37327FA25E00091E446 /* FavoriteViewController.swift in Sources */,
 				CE9AD4B227A2CE7C00E97143 /* UserDefaults+Local.swift in Sources */,
+				CED4D37127FA25C00091E446 /* MenuViewController.swift in Sources */,
 				CEAD8FE3279D618900B3C931 /* Coordinator.swift in Sources */,
+				CED4D36F27FA248B0091E446 /* MainTabBarController.swift in Sources */,
 				CEAD8FE7279D63B000B3C931 /* MainCoordinator.swift in Sources */,
 				CEAD8FE5279D61FF00B3C931 /* Stroyboarded.swift in Sources */,
 				CEAD8FD3279D5D6300B3C931 /* ViewController.swift in Sources */,
 				CEAD8FE9279D67F100B3C931 /* ProfileViewController.swift in Sources */,
 				CEAD8FCF279D5D6300B3C931 /* AppDelegate.swift in Sources */,
+				CED4D37727FA26150091E446 /* AboutViewController.swift in Sources */,
 				CEAD8FD1279D5D6300B3C931 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
