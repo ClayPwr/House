@@ -7,9 +7,9 @@
 
 import UIKit
 
-class OrderHistoryViewController: UIViewController {
+public final class OrderHistoryViewController: ViewController {
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .lightGray
