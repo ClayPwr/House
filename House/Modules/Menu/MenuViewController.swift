@@ -7,9 +7,11 @@
 
 import UIKit
 
-class MenuViewController: UIViewController {
+public final class MenuViewController: ViewController, ContentControllerProtocol {
+    
+//    public typealias View =
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .green

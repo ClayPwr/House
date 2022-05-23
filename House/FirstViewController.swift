@@ -8,7 +8,7 @@
 import UIKit
 import AuthenticationServices
 
-class ViewController: UIViewController, Stroyboarded {
+class FirstViewController: UIViewController, Stroyboarded {
     
     let signInButton = ASAuthorizationAppleIDButton()
     
@@ -44,7 +44,7 @@ class ViewController: UIViewController, Stroyboarded {
 
 // MARK: - ASAuthorizationControllerDelegate
 
-extension ViewController: ASAuthorizationControllerDelegate {
+extension FirstViewController: ASAuthorizationControllerDelegate {
     func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
         print("auth error ", error.localizedDescription)
     }
@@ -67,7 +67,7 @@ extension ViewController: ASAuthorizationControllerDelegate {
     }
 }
 
-extension ViewController: ASAuthorizationControllerPresentationContextProviding {
+extension FirstViewController: ASAuthorizationControllerPresentationContextProviding {
     func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
         return self.view.window!
     }
