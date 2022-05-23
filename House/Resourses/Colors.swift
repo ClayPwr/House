@@ -5,4 +5,8 @@
 //  Created by User on 5/10/22.
 //
 
-import Foundation
+import UIKit
+
+struct Colors {
+    static var black: UIColor { UIColor.black }
+}
