@@ -32,6 +32,8 @@ extension UserDefaults {
         static let userFullName = "userFullName"
         static let userEmail = "userEmail"
         static let userAppleAuthID = "userAppleAuthID"
+        static let numberOfOrderedItems = "numberOfOrderedItems"
+        static let orderHistory = "orderHistory"
     }
     
     @UserDefault(key: Keys.isUserLoggedIn, defaultValue: false)
@@ -48,4 +50,8 @@ extension UserDefaults {
     /// An identifier for the authenticated user.
     @UserDefault(key: Keys.userAppleAuthID, defaultValue: "")
     static var userAppleAuthID:  String
+    
+    /// A number of ordered same items
+    @UserDefault(key: Keys.numberOfOrderedItems, defaultValue: [:])
+    static var numberOfOrderedItems: [String: Int]
 }

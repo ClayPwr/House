@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol DetailContentViewDelegate: AnyObject {
+    func handleOrder(in view: DetailContentView)
+}
+
 public final class DetailContentView: UIView {
+    
+    weak var delegate: DetailContentViewDelegate?
     
     private var menuImageView: UIImageView = {
         let imageView = UIImageView()
@@ -24,11 +30,11 @@ public final class DetailContentView: UIView {
     }()
     
     private var containerStackView: UIStackView = {
-        let stakcView = UIStackView()
-        stakcView.axis = .vertical
-        stakcView.distribution = .fill
-        stakcView.spacing = 10
-        return stakcView
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.distribution = .fill
+        stackView.spacing = 10
+        return stackView
     }()
     
     private var titleLabel: UILabel = {
@@ -81,6 +87,10 @@ public final class DetailContentView: UIView {
         super.init(frame: frame)
         backgroundColor = .white
         addSubviews()
+        setupActions()
+        #if APPCLIP
+        favoriteImageView.isHidden = true
+        #endif
     }
     
     required init?(coder: NSCoder) {
@@ -100,6 +110,19 @@ public final class DetailContentView: UIView {
         priceLabel.text = viewModel.price + "$"
     }
     
+}
+
+// MARK: - Actions
+
+extension DetailContentView {
+    private func setupActions() {
+        orderButton.addTarget(self, action: #selector(handleOrder), for: .touchUpInside)
+    }
+    
+    @objc
+    private func handleOrder() {
+        delegate?.handleOrder(in: self)
+    }
 }
 
 // MARK: - Constraints & Subview

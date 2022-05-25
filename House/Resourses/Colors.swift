@@ -9,4 +9,5 @@ import UIKit
 
 struct Colors {
     static var black: UIColor { UIColor.black }
+    static var gray: UIColor { UIColor.gray }
 }

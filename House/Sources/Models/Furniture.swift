@@ -8,7 +8,7 @@
 import Foundation
 
 
-public struct Furniture {
+public struct Furniture: Codable {
     let imageName: String
     let title: String
     let description: String

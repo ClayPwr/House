@@ -8,7 +8,13 @@
 import UIKit
 import SnapKit
 
-public final class MenuCell: UITableViewCell {
+protocol MenuCellDelegate: AnyObject {
+    func handleOrder(in view: MenuCell)
+}
+
+public class MenuCell: UITableViewCell {
+    
+    weak var delegate: MenuCellDelegate?
     
     // TODO: add variable with didSet inside it update ui
     
@@ -103,6 +109,11 @@ public final class MenuCell: UITableViewCell {
         descriptionLabel.text = viewModel.description
         priceLabel.text = viewModel.price + "$"
     }
+    
+    func setupOrderHistory() {
+        orderButton.isHidden = true
+        menuImageView.contentMode = .scaleAspectFit
+    }
 }
 
 // MARK: - Actions
@@ -114,7 +125,7 @@ extension MenuCell {
     
     @objc
     private func handleOrder() {
-        print("handleOrder")
+        delegate?.handleOrder(in: self)
     }
 }
 

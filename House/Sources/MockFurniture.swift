@@ -12,6 +12,51 @@ class MockFurniture {
     
     static let shared = MockFurniture()
     
+    var ordersNumber: [String: Int] = [:]
+    
+    func orderedFurnitures() -> [Furniture] {
+        return orders.map { order -> Furniture? in
+            for _ in 0 ..< order.numbersOfOrder {
+                return order.furniture
+            }
+            return nil
+        }.compactMap { $0 }
+    }
+    
+    func numbersOfOrder(viewModel: Furniture) -> String {
+        if var order = orders.first(where: { $0.furniture.imageName == viewModel.imageName }) {
+            order.numbersOfOrder += 1
+            if let index = orders.firstIndex(where: { $0 == order }) {
+                orders.insert(order, at: index)
+            }
+            return "\(order.numbersOfOrder)"
+        } else {
+            orders.append(OrderHistory(numbersOfOrder: 1, furniture: viewModel))
+            return "1"
+        }
+    }
+    
+    var orders: [OrderHistory] {
+        get {
+            guard let standart = UserDefaults(suiteName: "group.md.House.clip") else {
+                return []
+            }
+            if let data = standart.value(forKey: UserDefaults.Keys.orderHistory) as? Data {
+                return try! PropertyListDecoder().decode([OrderHistory].self, from: data)
+            } else {
+                return []
+            }
+        }
+        set {
+            guard let standart = UserDefaults(suiteName: "group.md.House.clip") else {
+                return
+            }
+            if let data = try? PropertyListEncoder().encode(newValue) {
+                standart.set(data, forKey: UserDefaults.Keys.orderHistory)
+            }
+        }
+    }
+    
     let furnitures: [Furniture] = [
         Furniture(imageName: "stul_legend_temno_zeleniy", title: "Chair", description: "Customize your industrial decor with the Hofstetler accent chair. The sleek metal frame features sinuous spring and webbed support, along with optional pintuck detailing. Choose from a range of unique upholstery options to complement your urban aesthetic.", price: "250"),
         Furniture(imageName: "stul_petty_velvet_bezheviy", title: "Chair", description: "Porthos Home Sena accent chair - gracious company for the home or office. Sometimes, an under-utilized odd corner can offer practical seating arrangement you'll appreciate with an accent chair. The Porthos Home Sena accent chair will look delightful in the living room, bedroom or small office", price: "175.49"),

@@ -48,12 +48,13 @@ extension MenuViewController: UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        furnitures.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: MenuCell = tableView.dequeueCell(for: indexPath)
         cell.update(viewModel: furnitures[indexPath.row])
+        cell.delegate = self
         return cell
     }
     
@@ -72,5 +73,21 @@ extension MenuViewController: UITableViewDelegate {
     
     private func getItem(indexPath: IndexPath) -> Furniture {
         return furnitures[indexPath.row]
+    }
+}
+
+// MARK: - MenuCellDelegate
+
+extension MenuViewController: MenuCellDelegate {
+    func handleOrder(in view: MenuCell) {
+        let vc = OrderViewController(furniture: getItemBy(cell: view) ?? furnitures[0])
+        present(vc, animated: true)
+    }
+    
+    private func getItemBy(cell: MenuCell) -> Furniture? {
+        guard let indexPath = contentView.tableView.indexPath(for: cell) else {
+            return nil
+        }
+        return getItem(indexPath: indexPath)
     }
 }

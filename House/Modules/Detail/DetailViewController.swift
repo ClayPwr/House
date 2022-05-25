@@ -29,6 +29,16 @@ public final class DetailViewController: ViewController, ContentControllerProtoc
     public override func viewDidLoad() {
         super.viewDidLoad()
         contentView.update(viewModel: furniture)
+        contentView.delegate = self
         navigationController?.navigationBar.prefersLargeTitles = false
+    }
+}
+
+// MARK: - DetailContentViewDelegate
+
+extension DetailViewController: DetailContentViewDelegate {
+    func handleOrder(in view: DetailContentView) {
+        let vc = OrderViewController(furniture: furniture)
+        present(vc, animated: true)
     }
 }
