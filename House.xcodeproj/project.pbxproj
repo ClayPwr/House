@@ -29,6 +29,36 @@
 		CEAFE8802827DA6200ED341A /* MenuContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAFE87F2827DA6200ED341A /* MenuContentView.swift */; };
 		CEB19E6828315B1C002F82F7 /* Furniture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19E6728315B1C002F82F7 /* Furniture.swift */; };
 		CEB19E6C28315C4F002F82F7 /* MockFurniture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19E6B28315C4F002F82F7 /* MockFurniture.swift */; };
+		CEBB3273283BCDA400E5688C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB3272283BCDA400E5688C /* AppDelegate.swift */; };
+		CEBB3275283BCDA400E5688C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB3274283BCDA400E5688C /* SceneDelegate.swift */; };
+		CEBB3277283BCDA400E5688C /* ClipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB3276283BCDA400E5688C /* ClipViewController.swift */; };
+		CEBB327A283BCDA400E5688C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB3278283BCDA400E5688C /* Main.storyboard */; };
+		CEBB327C283BCDA700E5688C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBB327B283BCDA700E5688C /* Assets.xcassets */; };
+		CEBB327F283BCDA700E5688C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB327D283BCDA700E5688C /* LaunchScreen.storyboard */; };
+		CEBB3284283BCDA700E5688C /* HouseAppClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = CEBB3270283BCDA400E5688C /* HouseAppClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CEBB328A283BD59000E5688C /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB3289283BD59000E5688C /* OrderViewController.swift */; };
+		CEBB328D283BD5E200E5688C /* OrderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB328C283BD5E200E5688C /* OrderContentView.swift */; };
+		CEBB328E283CE30900E5688C /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB3289283BD59000E5688C /* OrderViewController.swift */; };
+		CEBB328F283CE30C00E5688C /* OrderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB328C283BD5E200E5688C /* OrderContentView.swift */; };
+		CEBB3290283CE31200E5688C /* DetailContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A401F28316F1200DD562A /* DetailContentView.swift */; };
+		CEBB3291283CE31500E5688C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A401C28316EB900DD562A /* DetailViewController.swift */; };
+		CEBB3292283CE31800E5688C /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE612F23282845B300235E66 /* MenuCell.swift */; };
+		CEBB3293283CE31B00E5688C /* MenuContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAFE87F2827DA6200ED341A /* MenuContentView.swift */; };
+		CEBB3294283CE31E00E5688C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4D37027FA25C00091E446 /* MenuViewController.swift */; };
+		CEBB3295283CE32200E5688C /* MockFurniture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19E6B28315C4F002F82F7 /* MockFurniture.swift */; };
+		CEBB3296283CE32500E5688C /* Furniture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB19E6728315B1C002F82F7 /* Furniture.swift */; };
+		CEBB3298283CE3BF00E5688C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAD8FD7279D5D6500B3C931 /* Assets.xcassets */; };
+		CEBB3299283CFAC000E5688C /* UserDefaults+Local.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AD4B127A2CE7C00E97143 /* UserDefaults+Local.swift */; };
+		CEBB329A283CFAC300E5688C /* ContentControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAFE87C2827D9F400ED341A /* ContentControllerProtocol.swift */; };
+		CEBB329B283CFAC600E5688C /* CollectionView & TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE612F1F2828435300235E66 /* CollectionView & TableView.swift */; };
+		CEBB329C283CFAC900E5688C /* ReusableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE612F21282843A000235E66 /* ReusableProtocol.swift */; };
+		CEBB329D283CFAD600E5688C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18B855282A54610050E39C /* Colors.swift */; };
+		CEBB329E283CFB1700E5688C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECBBA0F27FB0EB300770E17 /* ViewController.swift */; };
+		CEBB32A1283CFE5900E5688C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CEBB32A0283CFE5900E5688C /* SnapKit */; };
+		CEBB32A4283D38BC00E5688C /* OrderHistoryContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB32A3283D38BC00E5688C /* OrderHistoryContentView.swift */; };
+		CEBB32A6283D3CB500E5688C /* OrderedMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB32A5283D3CB500E5688C /* OrderedMenuCell.swift */; };
+		CEBB32A8283D608D00E5688C /* OrderHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB32A7283D608D00E5688C /* OrderHistory.swift */; };
+		CEBB32A9283D60E400E5688C /* OrderHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB32A7283D608D00E5688C /* OrderHistory.swift */; };
 		CECBBA1027FB0EB300770E17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECBBA0F27FB0EB300770E17 /* ViewController.swift */; };
 		CED4D36F27FA248B0091E446 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4D36E27FA248B0091E446 /* MainTabBarController.swift */; };
 		CED4D37127FA25C00091E446 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4D37027FA25C00091E446 /* MenuViewController.swift */; };
@@ -36,6 +66,30 @@
 		CED4D37527FA25FE0091E446 /* OrderHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4D37427FA25FE0091E446 /* OrderHistoryViewController.swift */; };
 		CED4D37727FA26150091E446 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4D37627FA26150091E446 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEBB3282283BCDA700E5688C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEAD8FC3279D5D6300B3C931 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEBB326F283BCDA400E5688C;
+			remoteInfo = HouseAppClip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEBB3285283BCDA700E5688C /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				CEBB3284283BCDA700E5688C /* HouseAppClip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CE18B855282A54610050E39C /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -62,6 +116,20 @@
 		CEAFE87F2827DA6200ED341A /* MenuContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContentView.swift; sourceTree = "<group>"; };
 		CEB19E6728315B1C002F82F7 /* Furniture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Furniture.swift; sourceTree = "<group>"; };
 		CEB19E6B28315C4F002F82F7 /* MockFurniture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFurniture.swift; sourceTree = "<group>"; };
+		CEBB3270283BCDA400E5688C /* HouseAppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseAppClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBB3272283BCDA400E5688C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEBB3274283BCDA400E5688C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEBB3276283BCDA400E5688C /* ClipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipViewController.swift; sourceTree = "<group>"; };
+		CEBB3279283BCDA400E5688C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEBB327B283BCDA700E5688C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEBB327E283BCDA700E5688C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEBB3280283BCDA700E5688C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEBB3281283BCDA700E5688C /* HouseAppClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HouseAppClip.entitlements; sourceTree = "<group>"; };
+		CEBB3289283BD59000E5688C /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		CEBB328C283BD5E200E5688C /* OrderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderContentView.swift; sourceTree = "<group>"; };
+		CEBB32A3283D38BC00E5688C /* OrderHistoryContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryContentView.swift; sourceTree = "<group>"; };
+		CEBB32A5283D3CB500E5688C /* OrderedMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedMenuCell.swift; sourceTree = "<group>"; };
+		CEBB32A7283D608D00E5688C /* OrderHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistory.swift; sourceTree = "<group>"; };
 		CECBBA0F27FB0EB300770E17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CED4D36E27FA248B0091E446 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		CED4D37027FA25C00091E446 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +144,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAFE87928219DA500ED341A /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBB326D283BCDA400E5688C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBB32A1283CFE5900E5688C /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +191,9 @@
 			isa = PBXGroup;
 			children = (
 				CEAD8FCD279D5D6300B3C931 /* House */,
+				CEBB3271283BCDA400E5688C /* HouseAppClip */,
 				CEAD8FCC279D5D6300B3C931 /* Products */,
+				CEBB329F283CFE5900E5688C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				CEAD8FCB279D5D6300B3C931 /* House.app */,
+				CEBB3270283BCDA400E5688C /* HouseAppClip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,8 +261,50 @@
 			isa = PBXGroup;
 			children = (
 				CEB19E6728315B1C002F82F7 /* Furniture.swift */,
+				CEBB32A7283D608D00E5688C /* OrderHistory.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CEBB3271283BCDA400E5688C /* HouseAppClip */ = {
+			isa = PBXGroup;
+			children = (
+				CEBB3272283BCDA400E5688C /* AppDelegate.swift */,
+				CEBB3274283BCDA400E5688C /* SceneDelegate.swift */,
+				CEBB3276283BCDA400E5688C /* ClipViewController.swift */,
+				CEBB3278283BCDA400E5688C /* Main.storyboard */,
+				CEBB327B283BCDA700E5688C /* Assets.xcassets */,
+				CEBB327D283BCDA700E5688C /* LaunchScreen.storyboard */,
+				CEBB3280283BCDA700E5688C /* Info.plist */,
+				CEBB3281283BCDA700E5688C /* HouseAppClip.entitlements */,
+			);
+			path = HouseAppClip;
+			sourceTree = "<group>";
+		};
+		CEBB328B283BD59700E5688C /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				CEBB3289283BD59000E5688C /* OrderViewController.swift */,
+				CEBB328C283BD5E200E5688C /* OrderContentView.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		CEBB329F283CFE5900E5688C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEBB32A2283D389300E5688C /* OrderHistory */ = {
+			isa = PBXGroup;
+			children = (
+				CED4D37427FA25FE0091E446 /* OrderHistoryViewController.swift */,
+				CEBB32A3283D38BC00E5688C /* OrderHistoryContentView.swift */,
+				CEBB32A5283D3CB500E5688C /* OrderedMenuCell.swift */,
+			);
+			path = OrderHistory;
 			sourceTree = "<group>";
 		};
 		CECBBA1127FB0EB700770E17 /* UICore */ = {
@@ -199,8 +320,9 @@
 			children = (
 				CEAFE87E2827DA3A00ED341A /* Menu */,
 				CE5A401E28316ECE00DD562A /* Detail */,
+				CEBB328B283BD59700E5688C /* Order */,
+				CEBB32A2283D389300E5688C /* OrderHistory */,
 				CED4D37227FA25E00091E446 /* FavoriteViewController.swift */,
-				CED4D37427FA25FE0091E446 /* OrderHistoryViewController.swift */,
 				CED4D37627FA26150091E446 /* AboutViewController.swift */,
 			);
 			path = Modules;
@@ -216,10 +338,12 @@
 				CEAD8FC7279D5D6300B3C931 /* Sources */,
 				CEAD8FC8279D5D6300B3C931 /* Frameworks */,
 				CEAD8FC9279D5D6300B3C931 /* Resources */,
+				CEBB3285283BCDA700E5688C /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CEBB3283283BCDA700E5688C /* PBXTargetDependency */,
 			);
 			name = House;
 			packageProductDependencies = (
@@ -229,6 +353,26 @@
 			productReference = CEAD8FCB279D5D6300B3C931 /* House.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CEBB326F283BCDA400E5688C /* HouseAppClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEBB3288283BCDA700E5688C /* Build configuration list for PBXNativeTarget "HouseAppClip" */;
+			buildPhases = (
+				CEBB326C283BCDA400E5688C /* Sources */,
+				CEBB326D283BCDA400E5688C /* Frameworks */,
+				CEBB326E283BCDA400E5688C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HouseAppClip;
+			packageProductDependencies = (
+				CEBB32A0283CFE5900E5688C /* SnapKit */,
+			);
+			productName = HouseAppClip;
+			productReference = CEBB3270283BCDA400E5688C /* HouseAppClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -236,11 +380,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					CEAD8FCA279D5D6300B3C931 = {
 						CreatedOnToolsVersion = 13.0;
+					};
+					CEBB326F283BCDA400E5688C = {
+						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
@@ -261,6 +408,7 @@
 			projectRoot = "";
 			targets = (
 				CEAD8FCA279D5D6300B3C931 /* House */,
+				CEBB326F283BCDA400E5688C /* HouseAppClip */,
 			);
 		};
 /* End PBXProject section */
@@ -276,6 +424,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEBB326E283BCDA400E5688C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBB327F283BCDA700E5688C /* LaunchScreen.storyboard in Resources */,
+				CEBB327C283BCDA700E5688C /* Assets.xcassets in Resources */,
+				CEBB3298283CE3BF00E5688C /* Assets.xcassets in Resources */,
+				CEBB327A283BCDA400E5688C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -286,31 +445,70 @@
 				CE612F202828435300235E66 /* CollectionView & TableView.swift in Sources */,
 				CE18B856282A54610050E39C /* Colors.swift in Sources */,
 				CE5A401D28316EB900DD562A /* DetailViewController.swift in Sources */,
+				CEBB32A8283D608D00E5688C /* OrderHistory.swift in Sources */,
 				CED4D37527FA25FE0091E446 /* OrderHistoryViewController.swift in Sources */,
 				CED4D37327FA25E00091E446 /* FavoriteViewController.swift in Sources */,
 				CE9AD4B227A2CE7C00E97143 /* UserDefaults+Local.swift in Sources */,
 				CED4D37127FA25C00091E446 /* MenuViewController.swift in Sources */,
 				CECBBA1027FB0EB300770E17 /* ViewController.swift in Sources */,
+				CEBB32A4283D38BC00E5688C /* OrderHistoryContentView.swift in Sources */,
 				CE612F24282845B300235E66 /* MenuCell.swift in Sources */,
 				CEAD8FE3279D618900B3C931 /* Coordinator.swift in Sources */,
 				CED4D36F27FA248B0091E446 /* MainTabBarController.swift in Sources */,
 				CE5A402028316F1200DD562A /* DetailContentView.swift in Sources */,
 				CE612F22282843A000235E66 /* ReusableProtocol.swift in Sources */,
+				CEBB328D283BD5E200E5688C /* OrderContentView.swift in Sources */,
 				CEAD8FE7279D63B000B3C931 /* MainCoordinator.swift in Sources */,
 				CEB19E6C28315C4F002F82F7 /* MockFurniture.swift in Sources */,
 				CEAD8FE5279D61FF00B3C931 /* Stroyboarded.swift in Sources */,
+				CEBB32A6283D3CB500E5688C /* OrderedMenuCell.swift in Sources */,
 				CEB19E6828315B1C002F82F7 /* Furniture.swift in Sources */,
 				CEAFE87D2827D9F400ED341A /* ContentControllerProtocol.swift in Sources */,
 				CEAD8FD3279D5D6300B3C931 /* FirstViewController.swift in Sources */,
 				CEAFE8802827DA6200ED341A /* MenuContentView.swift in Sources */,
 				CEAD8FE9279D67F100B3C931 /* ProfileViewController.swift in Sources */,
+				CEBB328A283BD59000E5688C /* OrderViewController.swift in Sources */,
 				CEAD8FCF279D5D6300B3C931 /* AppDelegate.swift in Sources */,
 				CED4D37727FA26150091E446 /* AboutViewController.swift in Sources */,
 				CEAD8FD1279D5D6300B3C931 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEBB326C283BCDA400E5688C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBB3277283BCDA400E5688C /* ClipViewController.swift in Sources */,
+				CEBB3295283CE32200E5688C /* MockFurniture.swift in Sources */,
+				CEBB329B283CFAC600E5688C /* CollectionView & TableView.swift in Sources */,
+				CEBB329D283CFAD600E5688C /* Colors.swift in Sources */,
+				CEBB3294283CE31E00E5688C /* MenuViewController.swift in Sources */,
+				CEBB3273283BCDA400E5688C /* AppDelegate.swift in Sources */,
+				CEBB328F283CE30C00E5688C /* OrderContentView.swift in Sources */,
+				CEBB329C283CFAC900E5688C /* ReusableProtocol.swift in Sources */,
+				CEBB3275283BCDA400E5688C /* SceneDelegate.swift in Sources */,
+				CEBB328E283CE30900E5688C /* OrderViewController.swift in Sources */,
+				CEBB3293283CE31B00E5688C /* MenuContentView.swift in Sources */,
+				CEBB3290283CE31200E5688C /* DetailContentView.swift in Sources */,
+				CEBB329E283CFB1700E5688C /* ViewController.swift in Sources */,
+				CEBB3292283CE31800E5688C /* MenuCell.swift in Sources */,
+				CEBB3296283CE32500E5688C /* Furniture.swift in Sources */,
+				CEBB32A9283D60E400E5688C /* OrderHistory.swift in Sources */,
+				CEBB329A283CFAC300E5688C /* ContentControllerProtocol.swift in Sources */,
+				CEBB3291283CE31500E5688C /* DetailViewController.swift in Sources */,
+				CEBB3299283CFAC000E5688C /* UserDefaults+Local.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEBB3283283BCDA700E5688C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEBB326F283BCDA400E5688C /* HouseAppClip */;
+			targetProxy = CEBB3282283BCDA700E5688C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CEAD8FD4279D5D6300B3C931 /* Main.storyboard */ = {
@@ -325,6 +523,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				CEAD8FDA279D5D6500B3C931 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CEBB3278283BCDA400E5688C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEBB3279283BCDA400E5688C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEBB327D283BCDA700E5688C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEBB327E283BCDA700E5688C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -451,6 +665,7 @@
 		CEAD8FE0279D5D6500B3C931 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = House/House.entitlements;
@@ -470,6 +685,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.md.ihor.tarabanov.House;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG APPCLIP";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -479,6 +695,7 @@
 		CEAD8FE1279D5D6500B3C931 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = House/House.entitlements;
@@ -500,6 +717,70 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.md.ihor.tarabanov.House;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = APPCLIP;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEBB3286283BCDA700E5688C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HouseAppClip/HouseAppClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4PR4N2FLE7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HouseAppClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = House;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.md.ihor.tarabanov.House.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG APPCLIP";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEBB3287283BCDA700E5688C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HouseAppClip/HouseAppClip.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4PR4N2FLE7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HouseAppClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = House;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.md.ihor.tarabanov.House.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = APPCLIP;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -527,6 +808,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		CEBB3288283BCDA700E5688C /* Build configuration list for PBXNativeTarget "HouseAppClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEBB3286283BCDA700E5688C /* Debug */,
+				CEBB3287283BCDA700E5688C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -542,6 +832,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		CEAFE87828219DA500ED341A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEAFE87728219DA500ED341A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		CEBB32A0283CFE5900E5688C /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CEAFE87728219DA500ED341A /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
