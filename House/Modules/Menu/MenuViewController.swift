@@ -9,12 +9,15 @@ import UIKit
 
 public final class MenuViewController: ViewController, ContentControllerProtocol {
     
-    private var furnitures: [Furniture]
+    private var furnitures: [Furniture] = [] {
+        didSet {
+            contentView.tableView.reloadData()
+        }
+    }
     
     public typealias ContentView = MenuContentView
     
     init() {
-        furnitures = MockFurniture.shared.furnitures
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -31,6 +34,9 @@ public final class MenuViewController: ViewController, ContentControllerProtocol
         contentView.tableView.delegate = self
         contentView.tableView.dataSource = self
         contentView.tableView.contentInset = UIEdgeInsets(top: 8, left: 0, bottom: 8, right: 0)
+        Task {
+            furnitures = try await MockFurniture.shared.getFurnitures()
+        }
     }
     
     public override func viewWillAppear(_ animated: Bool) {

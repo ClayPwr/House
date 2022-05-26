@@ -14,6 +14,11 @@ class MockFurniture {
     
     var ordersNumber: [String: Int] = [:]
     
+    func getFurnitures() async throws -> [Furniture] {
+        Thread.sleep(forTimeInterval: 0.5)
+        return furnitures
+    }
+    
     func orderedFurnitures() -> [Furniture] {
         return orders.map { order -> Furniture? in
             for _ in 0 ..< order.numbersOfOrder {
